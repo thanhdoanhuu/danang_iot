@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Danang_iot</string>
+    <string name="welcome_slogan">IoT</string>
+    <string name="scan_string">SCAN</string>
+    <string name="scaning_complete_string">Connected</string>
+    <string name="iot_introduce">モノのインターネット（物のインターネット、英語: Internet of Things, IoT）とは、様々な「モノ（物）」がインターネットに接続され（単に繋がるだけではなく、モノがインターネットのように繋がる）、情報交換することにより相互に制御する仕組みである。</string>
+</resources>
