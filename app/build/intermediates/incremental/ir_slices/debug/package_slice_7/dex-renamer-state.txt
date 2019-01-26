@@ -1,0 +1,4 @@
+#Sat Jan 26 13:56:27 JST 2019
+base.0=/home/thanh/iotProject/DaNang_iot/app/build/intermediates/transforms/dexMerger/debug/7
+path.0=classes.dex
+renamed.0=classes.dex

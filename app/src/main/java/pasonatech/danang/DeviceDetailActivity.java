@@ -21,6 +21,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.security.PrivateKey;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,6 +44,7 @@ public class DeviceDetailActivity extends AppCompatActivity {
     private BroadcastReceiver receiver;
     private BluetoothLeService mBluetoothLeService;
     private BluetoothDevice mBluetoothDevice = null;
+    MidiControl midiControl = new MidiControl();
 
     ArrayList<GenericBleProfile> bleProfiles = new ArrayList<GenericBleProfile>();
     List<BluetoothGattService> bleServiceList = new ArrayList<BluetoothGattService>();
@@ -466,5 +468,23 @@ public class DeviceDetailActivity extends AppCompatActivity {
         ((TextView) mActivity.findViewById(R.id.humidityValue)).setText(humidity);
         //周囲の光
         ((TextView) mActivity.findViewById(R.id.luxometerValue)).setText(luxMeter);
+
+        if(acceleration_x != ""){
+
+//             float x = Float.valueOf(acceleration_x);
+//            Integer lv_x = 0;
+//            if(x < 0){
+//                lv_x = 1;
+//            }
+
+            MidiControl.MIDImode midimode = MidiControl.MIDImode.Mode1;
+            PlayMusic.Key key = PlayMusic.Key.A;
+            int instrumentNo = 1;
+
+            Instrument instrument = new Instrument(midiControl,instrumentNo,midimode);
+            PlayMusic playMusic = new PlayMusic(instrument, key, 1,1);
+            playMusic.Play();
+        }
+
     }
 }
