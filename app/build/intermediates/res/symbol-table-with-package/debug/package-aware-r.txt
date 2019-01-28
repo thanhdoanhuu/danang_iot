@@ -764,6 +764,8 @@ id radio
 id right
 id right_icon
 id right_side
+id scaleView
+id scalevalue
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp

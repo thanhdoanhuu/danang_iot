@@ -1,146 +1,146 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:2:1-43:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6c60bcdfde3c5bb35c18ef0bce2fc743/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/thanh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/f0c786120123ee31ecbd504011427041/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:gridlayout-v7:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/gridlayout-v7-27.1.1.aar/e45406e22156afccc91aa145b95d117b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/011f423df7b29dfa4609d8473d634c39/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/be1e818f8ed3b68650dc631fa5b065cf/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/8becc5d0f4464d9bda63372b4c14a992/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3dd39bc08a56e33e510630b41bd34f86/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/d8a946024dc2d57395de2793620a218a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/14ab48fa52ef349f16f4401b240154fc/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/thanh/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/18d8fdd89ee495a55ed58fd978c4cc53/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/thanh/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/df7eb2108fb667f1413f13c271754492/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/thanh/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/019d0ec0a654722e3a117bff08942634/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /home/thanh/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a9a9761373f48eb6b35a28084d02866f/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:2:1-43:12
+ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:2:1-43:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\3f7b0cd7ea6f7b58884fff2864d4b698\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f547339d8a49e38c620da55c54726f54\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:gridlayout-v7:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\gridlayout-v7-27.1.1.aar\ba75262bf5369357351784ab62c65593\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\2c77f33b017605bffe9db31e2b000aca\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\71f30c59d7b1255841c134051e897fad\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\10975bf69d73c1b9a04e7fb8a6983c6b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\3a01537597b508a6c28264ec04dbb63b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\55894641f473fb02192a615fde6e3616\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\212bbe0dc1b1ba02370df66c5e03d615\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\e4a9b7ab97013f7833671a8d14ed6ec3\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\cdc525e36f6c8067e47f120d66b992ef\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0b58f80e6d03e9e82699c2c46cb7ccb2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4e4671df2bb7f94befb050b29b51e39f\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:3:11-38
-		INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
-		INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:3:11-38
+		INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:2:1-43:12
-		INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:2:1-43:12
+		INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:2:1-43:12
-		INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:2:1-43:12
+		INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.BLUETOOTH
-ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:5:22-65
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:5:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:6:5-73
+ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:6:5-73
 	android:name
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:6:22-71
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:6:22-71
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:7:5-80
+ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:7:22-78
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:8:5-78
+ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:8:5-78
 	android:name
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:8:22-76
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:8:22-76
 uses-feature#android.hardware.bluetooth_le
-ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:10:5-12:34
+ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:10:5-12:34
 	android:required
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:12:9-32
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:12:9-32
 	android:name
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:11:9-53
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:11:9-53
 application
-ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:14:5-41:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/thanh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/f0c786120123ee31ecbd504011427041/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/thanh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/f0c786120123ee31ecbd504011427041/AndroidManifest.xml:9:5-20
+ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:14:5-41:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f547339d8a49e38c620da55c54726f54\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f547339d8a49e38c620da55c54726f54\AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:20:9-35
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:20:9-35
 	android:label
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:18:9-31
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:18:9-31
 	android:roundIcon
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:19:9-54
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:19:9-54
 	android:icon
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:17:9-43
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:17:9-43
 	android:allowBackup
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:16:9-35
 	android:theme
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:21:9-40
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:21:9-40
 	android:name
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:15:9-37
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:15:9-37
 service#pasonatech.danang.service.BluetoothLeService
-ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:23:9-27:19
+ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:23:9-27:19
 	android:enabled
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:25:13-35
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:25:13-35
 	android:exported
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:26:13-36
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:24:13-55
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:24:13-55
 activity#pasonatech.danang.WelcomeActivity
-ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:29:9-35:20
+ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:29:9-35:20
 	android:name
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:29:19-50
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:29:19-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:30:13-34:29
+ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:31:17-68
+ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:31:17-68
 	android:name
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:31:25-66
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:33:17-76
+ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:33:17-76
 	android:name
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:33:27-74
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:33:27-74
 activity#pasonatech.danang.DeviceScanActivity
-ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:37:9-38:20
+ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:37:9-38:20
 	android:name
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:37:19-53
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:37:19-53
 activity#pasonatech.danang.DeviceDetailActivity
-ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:39:9-40:20
+ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:39:9-40:20
 	android:name
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml:39:19-55
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml:39:19-55
 uses-sdk
-INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
-INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6c60bcdfde3c5bb35c18ef0bce2fc743/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6c60bcdfde3c5bb35c18ef0bce2fc743/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/thanh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/f0c786120123ee31ecbd504011427041/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/thanh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/f0c786120123ee31ecbd504011427041/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:gridlayout-v7:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/gridlayout-v7-27.1.1.aar/e45406e22156afccc91aa145b95d117b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:gridlayout-v7:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/gridlayout-v7-27.1.1.aar/e45406e22156afccc91aa145b95d117b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/011f423df7b29dfa4609d8473d634c39/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/011f423df7b29dfa4609d8473d634c39/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/be1e818f8ed3b68650dc631fa5b065cf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/be1e818f8ed3b68650dc631fa5b065cf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/8becc5d0f4464d9bda63372b4c14a992/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/8becc5d0f4464d9bda63372b4c14a992/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3dd39bc08a56e33e510630b41bd34f86/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3dd39bc08a56e33e510630b41bd34f86/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/d8a946024dc2d57395de2793620a218a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/d8a946024dc2d57395de2793620a218a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/14ab48fa52ef349f16f4401b240154fc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /home/thanh/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/14ab48fa52ef349f16f4401b240154fc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/thanh/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/18d8fdd89ee495a55ed58fd978c4cc53/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/thanh/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/18d8fdd89ee495a55ed58fd978c4cc53/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/thanh/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/df7eb2108fb667f1413f13c271754492/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/thanh/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/df7eb2108fb667f1413f13c271754492/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/thanh/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/019d0ec0a654722e3a117bff08942634/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/thanh/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/019d0ec0a654722e3a117bff08942634/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /home/thanh/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a9a9761373f48eb6b35a28084d02866f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /home/thanh/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a9a9761373f48eb6b35a28084d02866f/AndroidManifest.xml:20:5-44
-INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
-INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
+INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\3f7b0cd7ea6f7b58884fff2864d4b698\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\3f7b0cd7ea6f7b58884fff2864d4b698\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f547339d8a49e38c620da55c54726f54\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f547339d8a49e38c620da55c54726f54\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:gridlayout-v7:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\gridlayout-v7-27.1.1.aar\ba75262bf5369357351784ab62c65593\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:gridlayout-v7:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\gridlayout-v7-27.1.1.aar\ba75262bf5369357351784ab62c65593\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\2c77f33b017605bffe9db31e2b000aca\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\2c77f33b017605bffe9db31e2b000aca\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\71f30c59d7b1255841c134051e897fad\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\71f30c59d7b1255841c134051e897fad\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\10975bf69d73c1b9a04e7fb8a6983c6b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\10975bf69d73c1b9a04e7fb8a6983c6b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\3a01537597b508a6c28264ec04dbb63b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\3a01537597b508a6c28264ec04dbb63b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\55894641f473fb02192a615fde6e3616\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\55894641f473fb02192a615fde6e3616\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\212bbe0dc1b1ba02370df66c5e03d615\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\212bbe0dc1b1ba02370df66c5e03d615\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\e4a9b7ab97013f7833671a8d14ed6ec3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\e4a9b7ab97013f7833671a8d14ed6ec3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\cdc525e36f6c8067e47f120d66b992ef\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\cdc525e36f6c8067e47f120d66b992ef\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0b58f80e6d03e9e82699c2c46cb7ccb2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0b58f80e6d03e9e82699c2c46cb7ccb2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4e4671df2bb7f94befb050b29b51e39f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\lika0\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4e4671df2bb7f94befb050b29b51e39f\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
-		INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
-		ADDED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
-		INJECTED from /home/thanh/iotProject/DaNang_iot/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lika0\Desktop\danang_iot\app\src\main\AndroidManifest.xml

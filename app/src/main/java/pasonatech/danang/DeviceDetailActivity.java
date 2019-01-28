@@ -17,6 +17,7 @@ import android.os.Message;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -67,6 +68,7 @@ public class DeviceDetailActivity extends AppCompatActivity {
     private String acceleration_z = "";
     private String luxMeter = "";
     private String humidity = "";
+    private String scale = "";
 
 
     @Override
@@ -252,6 +254,7 @@ public class DeviceDetailActivity extends AppCompatActivity {
                                     List<BluetoothGattCharacteristic> chars = s.getCharacteristics();
                                     totalCharacteristics += chars.size();
                                 }
+
                                 //Special
                                 if (totalCharacteristics == 0) {
                                     //Something bad happened, we have a problem
@@ -357,6 +360,7 @@ public class DeviceDetailActivity extends AppCompatActivity {
                                             public void onMovementMAGChanged(double x, double y, double z) {
                                             }
                                         });
+
                                         mProfiles.add(mov);
                                         if (nrNotificationsOn < maxNotifications) {
                                             mov.configureService();
@@ -365,6 +369,7 @@ public class DeviceDetailActivity extends AppCompatActivity {
                                         Log.d("DeviceActivity", "Found Motion !");
                                     }
                                 }
+
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
@@ -460,31 +465,125 @@ public class DeviceDetailActivity extends AppCompatActivity {
 
         //加速度X
         ((TextView) mActivity.findViewById(R.id.movementValue1X)).setText(acceleration_x);
+
         //加速度Y
         ((TextView) mActivity.findViewById(R.id.movementValue1Y)).setText(acceleration_y);
+
         //加速度Z
         ((TextView) mActivity.findViewById(R.id.movementValue1Z)).setText(acceleration_z);
+
         //湿度
         ((TextView) mActivity.findViewById(R.id.humidityValue)).setText(humidity);
+
         //周囲の光
         ((TextView) mActivity.findViewById(R.id.luxometerValue)).setText(luxMeter);
 
-        if(acceleration_x != ""){
+        //加速度 Xをランク分け
 
-//             float x = Float.valueOf(acceleration_x);
-//            Integer lv_x = 0;
-//            if(x < 0){
-//                lv_x = 1;
-//            }
 
-            MidiControl.MIDImode midimode = MidiControl.MIDImode.Mode1;
-            PlayMusic.Key key = PlayMusic.Key.A;
-            int instrumentNo = 1;
+        int lv_x=0;
+        int lv_y=0;
+        int lv_z=0;
+        int lv_h=0;
+        int lv_l=0;
 
-            Instrument instrument = new Instrument(midiControl,instrumentNo,midimode);
-            PlayMusic playMusic = new PlayMusic(instrument, key, 1,1);
-            playMusic.Play();
+        if(acceleration_x != "") {
+
+            float x = Float.valueOf(acceleration_x);
+            if (x < 0) {
+                lv_x = 1;
+            } else if (x < 5) {
+                lv_x = 2;
+            } else
+                lv_x = 3;
         }
 
+        //加速度 yをランク分け
+        if(acceleration_y != "") {
+
+            float y = Float.valueOf(acceleration_y);
+            if (y < 0) {
+                lv_y = 1;
+            } else if (y < 5) {
+                lv_y = 2;
+            } else
+                lv_y = 3;
+        }
+
+        //加速度 Zをランク分け
+        if(acceleration_z != "") {
+
+            float z = Float.valueOf(acceleration_z);
+            if (z < 0) {
+                lv_z = 1;
+            } else if (z < 5) {
+                lv_z = 2;
+            } else
+                lv_z = 3;
+        }
+
+        //湿度をランク分け
+        if(humidity != "") {
+
+            int h = Integer.valueOf(humidity);
+            if (h < 30) {
+                lv_h = 1;
+            } else if (h < 60) {
+                lv_h = 2;
+            } else
+                lv_h = 3;
+        }
+
+        //光の強さをランク分け
+        if(luxMeter != "") {
+
+            int l = Integer.valueOf(acceleration_z);
+            if (l < 100) {
+                lv_l = 1;
+            } else if (l < 400) {
+                lv_l = 2;
+            } else
+                lv_l = 3;
+        }
+
+
+       if ((lv_x ==1) && (lv_y ==3) && (lv_z ==2) && (lv_h == 2) && (lv_l==1)){
+
+             scale="A#";
+            ((TextView) mActivity.findViewById(R.id.scalevalue)).setText(scale);
+
+        }else if ((lv_x ==2) && (lv_y ==2) && (lv_z ==1) && (lv_h == 3) && (lv_l==2)){
+
+            scale="c#";
+            ((TextView) mActivity.findViewById(R.id.scalevalue)).setText(scale);
+
+        }else if ((lv_x ==3) && (lv_y ==1) && (lv_z ==3) && (lv_h == 1) && (lv_l==3)) {
+
+           scale = "b#";
+           ((TextView) mActivity.findViewById(R.id.scalevalue)).setText(scale);
+
+        }else if ((lv_x ==1) && (lv_y ==1) && (lv_z ==1) && (lv_h == 1) && (lv_l==1)){
+
+               scale="b";
+               ((TextView) mActivity.findViewById(R.id.scalevalue)).setText(scale);
+
+        }else
+           scale="c";
+           ((TextView) mActivity.findViewById(R.id.scalevalue)).setText(scale);
+
     }
-}
+
+
+    public void ScaleView(View view) {
+        System.out.println("c#");
+        }
+
+
+//            MidiControl.MIDImode midimode = MidiControl.MIDImode.Mode1;
+//            PlayMusic.Key key = PlayMusic.Key.A;
+//            int instrumentNo = 1;
+//
+//            Instrument instrument = new Instrument(midiControl,instrumentNo,midimode);
+//            PlayMusic playMusic = new PlayMusic(instrument, key, 3,1);
+//            playMusic.Play();
+    }

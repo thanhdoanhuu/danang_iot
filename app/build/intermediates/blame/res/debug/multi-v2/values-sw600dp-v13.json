@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/thanh/iotProject/DaNang_iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "C:\\Users\\lika0\\Desktop\\danang_iot\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/thanh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6c60bcdfde3c5bb35c18ef0bce2fc743/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\lika0\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\3f7b0cd7ea6f7b58884fff2864d4b698\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

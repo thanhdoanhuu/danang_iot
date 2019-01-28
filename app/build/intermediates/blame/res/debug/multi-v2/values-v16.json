@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/thanh/iotProject/DaNang_iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "C:\\Users\\lika0\\Desktop\\danang_iot\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "/home/thanh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6c60bcdfde3c5bb35c18ef0bce2fc743/res/values-v16/values-v16.xml",
+                    "source": "C:\\Users\\lika0\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\3f7b0cd7ea6f7b58884fff2864d4b698\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/thanh/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/14ab48fa52ef349f16f4401b240154fc/res/values-v16/values-v16.xml",
+                    "source": "C:\\Users\\lika0\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\212bbe0dc1b1ba02370df66c5e03d615\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
