@@ -18,6 +18,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -69,6 +70,7 @@ public class DeviceDetailActivity extends AppCompatActivity {
     private String luxMeter = "";
     private String humidity = "";
     private String scale = "";
+    private Button scaleView;
 
 
     @Override
@@ -82,13 +84,16 @@ public class DeviceDetailActivity extends AppCompatActivity {
         mainController = new BLEController(this);
         mProfiles = new ArrayList<GenericBleProfile>();
 
+//        scaleView = (Button) findViewById(R.id.scalevalue);
+//        scaleView.setOnClickListener(onClick(this);
+        setViews();
+
         mIsSensorTag2 = false;
         // Determine type of SensorTagGatt
         String deviceName = mBluetoothDevice.getName();
         if ((deviceName.equals("SensorTag2")) || (deviceName.equals("CC2650 SensorTag"))) {
             mIsSensorTag2 = true;
         }
-
 
         initialLayout();
         initialReceiver();
@@ -164,8 +169,7 @@ public class DeviceDetailActivity extends AppCompatActivity {
             public void onReceive(Context context, Intent intent) {
 
                 final String action = intent.getAction();
-                final int status = intent.getIntExtra(BluetoothLeService.EXTRA_STATUS,
-                        BluetoothGatt.GATT_SUCCESS);
+                final int status = intent.getIntExtra(BluetoothLeService.EXTRA_STATUS, BluetoothGatt.GATT_SUCCESS);
 
                 if (intent.getAction().equals(BluetoothLeService.ACTION_DATA_NOTIFY)) {
                     byte[] value = intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA);
@@ -459,7 +463,7 @@ public class DeviceDetailActivity extends AppCompatActivity {
     /**
      *
      */
-    private void updateScreen(){
+    private void updateScreen() {
 
         //TODO こっちで実装してください。
 
@@ -479,106 +483,95 @@ public class DeviceDetailActivity extends AppCompatActivity {
         ((TextView) mActivity.findViewById(R.id.luxometerValue)).setText(luxMeter);
 
         //加速度 Xをランク分け
+        int lv_x = 0;
+        int lv_y = 0;
+        int lv_z = 0;
+        int lv_h = 0;
+        int lv_l = 0;
 
-
-        int lv_x=0;
-        int lv_y=0;
-        int lv_z=0;
-        int lv_h=0;
-        int lv_l=0;
-
-        if(acceleration_x != "") {
+        if (acceleration_x != "") {
 
             float x = Float.valueOf(acceleration_x);
             if (x < 0) {
                 lv_x = 1;
             } else if (x < 5) {
                 lv_x = 2;
-            } else
-                lv_x = 3;
+            } else lv_x = 3;
         }
 
         //加速度 yをランク分け
-        if(acceleration_y != "") {
+        if (acceleration_y != "") {
 
             float y = Float.valueOf(acceleration_y);
             if (y < 0) {
                 lv_y = 1;
             } else if (y < 5) {
                 lv_y = 2;
-            } else
-                lv_y = 3;
+            } else lv_y = 3;
         }
 
         //加速度 Zをランク分け
-        if(acceleration_z != "") {
+        if (acceleration_z != "") {
 
             float z = Float.valueOf(acceleration_z);
             if (z < 0) {
                 lv_z = 1;
             } else if (z < 5) {
                 lv_z = 2;
-            } else
-                lv_z = 3;
+            } else lv_z = 3;
         }
 
         //湿度をランク分け
-        if(humidity != "") {
+        if (humidity != "") {
 
             int h = Integer.valueOf(humidity);
             if (h < 30) {
                 lv_h = 1;
             } else if (h < 60) {
                 lv_h = 2;
-            } else
-                lv_h = 3;
+            } else lv_h = 3;
         }
 
         //光の強さをランク分け
-        if(luxMeter != "") {
+        if (luxMeter != "") {
 
-            int l = Integer.valueOf(acceleration_z);
+            int l = Integer.valueOf(luxMeter);
             if (l < 100) {
                 lv_l = 1;
             } else if (l < 400) {
                 lv_l = 2;
-            } else
-                lv_l = 3;
+            } else lv_l = 3;
         }
 
+        if ((lv_x == 1) && (lv_y == 3) && (lv_z == 2) && (lv_h == 2) && (lv_l == 1)) {
+            scale = "A#";
 
-       if ((lv_x ==1) && (lv_y ==3) && (lv_z ==2) && (lv_h == 2) && (lv_l==1)){
+        } else if ((lv_x == 2) && (lv_y == 2) && (lv_z == 1) && (lv_h == 3) && (lv_l == 2)) {
+            scale = "c#";
 
-             scale="A#";
-            ((TextView) mActivity.findViewById(R.id.scalevalue)).setText(scale);
+        } else if ((lv_x == 3) && (lv_y == 1) && (lv_z == 3) && (lv_h == 1) && (lv_l == 3)) {
+            scale = "b#";
 
-        }else if ((lv_x ==2) && (lv_y ==2) && (lv_z ==1) && (lv_h == 3) && (lv_l==2)){
+        } else if ((lv_x == 1) && (lv_y == 1) && (lv_z == 1) && (lv_h == 1) && (lv_l == 1)) {
+            scale = "b";
 
-            scale="c#";
-            ((TextView) mActivity.findViewById(R.id.scalevalue)).setText(scale);
-
-        }else if ((lv_x ==3) && (lv_y ==1) && (lv_z ==3) && (lv_h == 1) && (lv_l==3)) {
-
-           scale = "b#";
-           ((TextView) mActivity.findViewById(R.id.scalevalue)).setText(scale);
-
-        }else if ((lv_x ==1) && (lv_y ==1) && (lv_z ==1) && (lv_h == 1) && (lv_l==1)){
-
-               scale="b";
-               ((TextView) mActivity.findViewById(R.id.scalevalue)).setText(scale);
-
-        }else
-           scale="c";
-           ((TextView) mActivity.findViewById(R.id.scalevalue)).setText(scale);
-
+        } else scale = "c";
     }
 
+    private void setViews(){
+        Button button=(Button)findViewById(R.id.button_scale);
+        button.setOnClickListener(onClick_button);
+    }
 
-    public void ScaleView(View view) {
-        System.out.println("c#");
+//    public void onClick(View v) {
+    private View.OnClickListener onClick_button=new View.OnClickListener() {
+    @Override
+
+        public void onClick(View v) {
+            ((TextView) mActivity.findViewById(R.id.scalevalue)).setText(scale);
         }
-
-
+};
+}
 //            MidiControl.MIDImode midimode = MidiControl.MIDImode.Mode1;
 //            PlayMusic.Key key = PlayMusic.Key.A;
 //            int instrumentNo = 1;
@@ -586,4 +579,3 @@ public class DeviceDetailActivity extends AppCompatActivity {
 //            Instrument instrument = new Instrument(midiControl,instrumentNo,midimode);
 //            PlayMusic playMusic = new PlayMusic(instrument, key, 3,1);
 //            playMusic.Play();
-    }

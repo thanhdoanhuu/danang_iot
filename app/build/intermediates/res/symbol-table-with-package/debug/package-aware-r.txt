@@ -695,6 +695,7 @@ id ble_scan_list
 id blocking
 id bottom
 id buttonPanel
+id button_scale
 id center
 id center_horizontal
 id center_vertical
@@ -764,7 +765,6 @@ id radio
 id right
 id right_icon
 id right_side
-id scaleView
 id scalevalue
 id screen
 id scrollIndicatorDown
