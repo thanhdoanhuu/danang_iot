@@ -35,6 +35,7 @@ public class PlayMusic {
     }
 
     public enum Scale{
+        Non(0),
         MajorDiatonic(10),
         MajorPentatonic(11),
         NaturalMinor(20),
@@ -95,7 +96,7 @@ public class PlayMusic {
         this.octave = 60 / 12; // 60 : Center C
     }
 
-    private int decideOvtave() {
+    protected int decideOvtave() {
         int num = this.random.nextInt(100);
 
         if (99 - this.octaveUp <= num) {
@@ -110,12 +111,14 @@ public class PlayMusic {
         return this.octave;
     }
 
-    private int decideNote(){
+    protected int decideNote(){
         if( false == this.firstPitch ){
             this.firstPitch = true;
-            this.note = this.key.getInt() ;    //  60 is center C.
+            this.note = this.key.getInt() ;    //  First note is Key note.
         }
-        this.note = this.key.getInt() + this.scaleTable[this.random.nextInt(scaleTable.length)];
+        else{
+            this.note = this.key.getInt() + this.scaleTable[this.random.nextInt(scaleTable.length)];
+        }
         return this.note ;
     }
 
@@ -196,7 +199,7 @@ class PlayMusicMerodicMinor extends PlayMusic{
         return this.octave;
     }
 
-    private int decideNote(){
+    protected int decideNote(){
         int beforeNote = this.note;
 
         if( false == this.firstPitch ){
@@ -293,5 +296,172 @@ class PlayMusicEightNoteSpanish extends PlayMusic{
         super(instrument, key, upper, bottum);
         this.scale = Scale.EightNoteSpanish;
         this.scaleTable = new int[]{0,1,3,4,5,7,8,10};
+    }
+}
+
+class PlayChord extends PlayMusic{
+    protected int NumberOfSequence ;
+    protected int[] sequence ;
+    protected int velocity ;
+
+    public PlayChord(Instrument instrument, PlayMusic.Key key, int upper, int bottum){
+        super(instrument, key, upper, bottum);
+        this.scale = Scale.Non;
+        this.scaleTable = new int[]{0,1,2,3,4,5,6,7,8,9,10,11};
+        this.note = this.key.getInt() ;    //  Key note.
+        this.NumberOfSequence = 0 ;
+    }
+
+    protected int decideNote(){
+        this.note = this.key.getInt() + this.sequence[NumberOfSequence];
+        NumberOfSequence = ( NumberOfSequence + 1 ) % sequence.length ;
+        return this.note ;
+    }
+    public void Play(){
+        this.instrument.allOff();
+        this.velocity = this.random.nextInt(64)+64;
+        this.decideNote();
+        super.decideOvtave();
+        this.MajorTriad(); ;
+    }
+    protected void MajorTriad(){
+        this.instrument.noteOn(this.octave, this.note,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+4,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+7,this.velocity) ;
+    }
+    protected void MinorTriad(){
+        this.instrument.noteOn(this.octave, this.note,velocity) ;
+        this.instrument.noteOn(this.octave, this.note+3,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+7,this.velocity) ;
+    }
+    protected void Seventh(){
+        this.instrument.noteOn(this.octave, this.note,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+4,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+7,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+10,this.velocity) ;
+    }
+    protected void MinorSeventh(){
+        this.instrument.noteOn(this.octave, this.note,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+3,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+7,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+10,this.velocity) ;
+    }
+    protected void Nineth(){
+        this.instrument.noteOn(this.octave, this.note,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+4,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+7,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+10,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+13,this.velocity) ;
+    }
+    protected void MinorNineth(){
+        this.instrument.noteOn(this.octave, this.note,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+3,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+7,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+10,this.velocity) ;
+        this.instrument.noteOn(this.octave, this.note+13,this.velocity) ;
+    }
+}
+
+class ThreeChord1451 extends PlayChord{
+    public ThreeChord1451(Instrument instrument, PlayMusic.Key key, int upper, int bottum){
+        super(instrument, key, upper, bottum);
+        this.sequence = new int[]{0, 5, 7, 0};
+    }
+}
+
+class ThreeChord1541 extends PlayChord{
+    public ThreeChord1541(Instrument instrument, PlayMusic.Key key, int upper, int bottum){
+        super(instrument, key, upper, bottum);
+        this.sequence = new int[]{0, 7, 5, 0};
+    }
+}
+
+class ThreeChord4151 extends PlayChord{
+    public ThreeChord4151(Instrument instrument, PlayMusic.Key key, int upper, int bottum){
+        super(instrument, key, upper, bottum);
+        this.sequence = new int[]{5, 0, 7, 0};
+    }
+}
+
+class ThreeChord7th1415 extends PlayChord{
+    public ThreeChord7th1415(Instrument instrument, PlayMusic.Key key, int upper, int bottum){
+        super(instrument, key, upper, bottum);
+        this.sequence = new int[]{0, 5, 0, 7};
+    }
+    public void Play(){
+        this.instrument.allOff();
+        this.velocity = this.random.nextInt(64)+64;
+        super.decideNote();
+        super.decideOvtave();
+        this.Seventh();
+    }
+}
+
+class FourChord extends PlayChord{
+    protected int[][] sequence ;
+    protected int chordType ;
+    public FourChord(Instrument instrument, PlayMusic.Key key, int upper, int bottum){
+        super(instrument, key, upper, bottum);
+    }
+
+    protected int decideNote(){
+        this.note = this.key.getInt() + this.sequence[0][NumberOfSequence];
+        this.chordType = this.key.getInt() + this.sequence[1][NumberOfSequence];
+        this.NumberOfSequence = ( NumberOfSequence + 1 ) % sequence.length ;
+        return this.note ;
+    }
+
+    public void Play(){
+        this.instrument.allOff();
+        this.velocity = this.random.nextInt(64)+64;
+        this.decideNote();
+        super.decideOvtave();
+        if( -3 == this.chordType ) {
+            this.MinorTriad();
+        }
+        else if( 7 == this.chordType ) {
+            this.Seventh();
+        }
+        else if( -7 == this.chordType ) {
+            this.MinorSeventh();
+        }
+        else {
+            this.MajorTriad();
+        }
+    }
+}
+
+class FourChord1645 extends FourChord{
+    public FourChord1645(Instrument instrument, PlayMusic.Key key, int upper, int bottum){
+        super(instrument, key, upper, bottum);
+        this.sequence = new int[][]{{0, 9, 5, 7},{3, -3, 3, 3}};
+    }
+}
+
+class FourChord1625 extends FourChord{
+    public FourChord1625(Instrument instrument, PlayMusic.Key key, int upper, int bottum){
+        super(instrument, key, upper, bottum);
+        this.sequence = new int[][]{{0, 9, 2, 7},{3, -3, -7, 7}};
+    }
+}
+
+class FourChord6251 extends FourChord{
+    public FourChord6251(Instrument instrument, PlayMusic.Key key, int upper, int bottum){
+        super(instrument, key, upper, bottum);
+        this.sequence = new int[][]{{9, 2, 7, 0},{-3, -7, 7, 3 }};
+    }
+}
+
+class FourChord4516 extends FourChord{
+    public FourChord4516(Instrument instrument, PlayMusic.Key key, int upper, int bottum){
+        super(instrument, key, upper, bottum);
+        this.sequence = new int[][]{{5, 7, 0, 9},{3, 3, 3, -3}};
+    }
+}
+
+class FourChord15634145 extends FourChord{
+    public FourChord15634145(Instrument instrument, PlayMusic.Key key, int upper, int bottum){
+        super(instrument, key, upper, bottum);
+        this.sequence = new int[][]{{0, 7, 9, 4, 5, 0, 5, 7},{3, 3, -3, -3, 3, 3, 3, 3}};
     }
 }

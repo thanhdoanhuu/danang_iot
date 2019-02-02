@@ -24,7 +24,7 @@ public class MidiControl {
         private MIDImode midiMode;
 
         public MidiChannel(){
-            this.channel = 0;
+            this.channel = 1;
         }
 
         public void setInstrument(byte InstrumentNo, MIDImode midiMode){

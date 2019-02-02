@@ -10,6 +10,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.hardware.usb.UsbDevice;
+import android.media.midi.MidiDeviceInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,6 +19,7 @@ import android.os.Message;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
@@ -46,7 +49,17 @@ public class DeviceDetailActivity extends AppCompatActivity {
     private BroadcastReceiver receiver;
     private BluetoothLeService mBluetoothLeService;
     private BluetoothDevice mBluetoothDevice = null;
-    MidiControl midiControl = new MidiControl();
+    private MidiControl midiControl;
+    private Instrument instrument ;
+
+    private PlayMusic playMusic;
+
+    ///Instrument instrument, Key key, int upper, int bottum
+
+
+
+
+
 
     ArrayList<GenericBleProfile> bleProfiles = new ArrayList<GenericBleProfile>();
     List<BluetoothGattService> bleServiceList = new ArrayList<BluetoothGattService>();
@@ -71,6 +84,9 @@ public class DeviceDetailActivity extends AppCompatActivity {
     private String humidity = "";
     private String scale = "";
     private Button scaleView;
+    private Toast toastMessage ;
+
+    private PlayMusic.Key   Key ;
 
 
     @Override
@@ -94,7 +110,36 @@ public class DeviceDetailActivity extends AppCompatActivity {
         if ((deviceName.equals("SensorTag2")) || (deviceName.equals("CC2650 SensorTag"))) {
             mIsSensorTag2 = true;
         }
+        TextView textView ;
 
+//        super.onCreate(savedInstanceState);
+
+        this.midiControl = new MidiControl();
+        if( this.midiControl.Initialize(DeviceDetailActivity.this)) {
+            this.midiControl.openMidiDevice() ;
+            MidiDeviceInfo info ;
+
+            int retry = 0 ;
+            do {
+                info = this.midiControl.getSequencerInfo();
+                if(null == info){
+                    try {
+                        Thread.sleep(100);
+                    }
+                    catch(InterruptedException e){
+                        this.toastMessage = Toast.makeText(this, "Thread.Sleep exception!.", Toast.LENGTH_SHORT);
+                        this.toastMessage.setGravity(Gravity.CENTER, 0, 0);
+                        this.toastMessage.show();
+                    }
+                    retry++ ;
+                }
+            }while( null == info && 3 > retry) ;
+        }
+
+        // 楽器オブジェクトを生成
+        this.instrument = new Instrument(this.midiControl, 0x00, MidiControl.MIDImode.Mode3) ;
+
+        playMusic = new PlayMusic(this.instrument, PlayMusic.Key.A,1,1) ;
         initialLayout();
         initialReceiver();
         onViewInfalted();
@@ -160,6 +205,7 @@ public class DeviceDetailActivity extends AppCompatActivity {
 
     private void initialReceiver() {
 
+//        this.playMusic.Stop();
         receiver = new BroadcastReceiver() {
 
             List<BluetoothGattService> serviceList;
@@ -546,56 +592,64 @@ public class DeviceDetailActivity extends AppCompatActivity {
         if (luxMeter != "") {
 
             float l = Float.valueOf(luxMeter);
-//            if (l < 100) {
-//                lv_l = 1;
-//            } else if (l < 200) {
-//                lv_l = 2;
-//            } else lv_l = 3;
+
 
             lv_l = (int)(l/100);
         }
         Integer total = 0;
-//        if ((lv_x == 1) && (lv_y == 3) && (lv_z == 2) && (lv_h == 2) && (lv_l == 3)) {
-//            scale = "A#";
-//
-//        } else if ((lv_x == 2) && (lv_y == 2) && (lv_z == 1) && (lv_h == 3) && (lv_l == 2)) {
-//            scale = "c#";
-//
-//        } else if ((lv_x == 3) && (lv_y == 1) && (lv_z == 3) && (lv_h == 1) && (lv_l == 3)) {
-//            scale = "b#";
-//
-//        } else if ((lv_x == 1) && (lv_y == 1) && (lv_z == 1) && (lv_h == 1) && (c == 1)) {
-//            scale = "b";
-//
-//        } else scale = "c";
+
 
         total = (lv_x + lv_y + lv_z + lv_l) % 7;
         switch (total){
             case 1:
-                scale = "G";
+                scale = "A";
+                this.Key = PlayMusic.Key.A ;
+//                this.playMusic.Play();
                 break;
 
             case 2:
-                scale = "A";
+                scale = "B";
+                this.Key = PlayMusic.Key.B ;
+//                this.playMusic.Play();
                 break;
             case 3:
-                scale = "B";
+                scale = "C";
+                this.Key = PlayMusic.Key.C ;
+//                this.playMusic.Play();
                 break;
             case 4:
-                scale = "C";
+                scale = "D";
+                this.Key = PlayMusic.Key.D ;
+//                this.playMusic.Play();
                 break;
             case 5:
-                scale = "D";
+                scale = "E";
+                this.Key = PlayMusic.Key.E ;
                 break;
             case 6:
-                scale = "E";
+                scale = "F";
+                this.Key = PlayMusic.Key.F ;
+//
                 break;
             case 7:
-                scale = "F";
+                scale = "G";
+                this.Key = PlayMusic.Key.G ;
                 break;
 
         }
         ((TextView) mActivity.findViewById(R.id.scalevalue)).setText(scale);
+//        PlayMusic playMusic2 = new PlayMusic(instrument, this.Key,1,1) ;
+//        this.playMusic.Play();
+//        playMusic2.Play();
+        // 演奏オブジェクトを生成　引数 ： 楽器オブジェクト、キー、上限オクターブ（中心からの相対値）、下限オクターブ（中心からの相対値）
+        // 演奏オブジェクトはスケール種類（メジャー、ナチュラルマイナー、メジャーペンタトニックなど）ごとにクラスを定義
+//        if ( null == this.playMusic ) {
+//            this.playMusic = new FourChord15634145(instrument, this.Key, 2, 2);
+//        }
+//        else{
+//            this.playMusic.Play();
+//        }
+
     }
 
     private void setViews(){
@@ -617,5 +671,5 @@ public class DeviceDetailActivity extends AppCompatActivity {
 //            int instrumentNo = 1;
 //
 //            Instrument instrument = new Instrument(midiControl,instrumentNo,midimode);
-//            PlayMusic playMusic = new PlayMusic(instrument, key, 3,1);
+//            Plthis.playMusic.Play();ayMusic playMusic = new PlayMusic(instrument, key, 3,1);
 //            playMusic.Play();
