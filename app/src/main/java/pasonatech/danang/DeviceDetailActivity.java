@@ -492,36 +492,36 @@ public class DeviceDetailActivity extends AppCompatActivity {
         if (acceleration_x != "") {
 
             float x = Float.valueOf(acceleration_x);
-            lv_x = 1;
-//            if (x < 0) {
-//                lv_x = 1;
-//            } else if (x < 5) {
-//                lv_x = 2;
-//            } else lv_x = 3;
+//            lv_x = 1;
+            if (x < -2) {
+                lv_x = 1;
+            } else if (x < 0) {
+                lv_x = 2;
+            } else lv_x = 3;
         }
 
         //加速度 yをランク分け
         if (acceleration_y != "") {
 
             float y = Float.valueOf(acceleration_y);
-            lv_y = 1;
-//            if (y < 0) {
-//                lv_y = 1;
-//            } else if (y < 5) {
-//                lv_y = 2;
-//            } else lv_y = 3;
+//            lv_y = 1;
+            if (y < 0) {
+                lv_y = 1;
+            } else if (y < 5) {
+                lv_y = 2;
+            } else lv_y = 3;
         }
 
         //加速度 Zをランク分け
         if (acceleration_z != "") {
 
             float z = Float.valueOf(acceleration_z);
-            lv_z = 1;
-//            if (z < 0) {
-//                lv_z = 1;
-//            } else if (z < 5) {
-//                lv_z = 2;
-//            } else lv_z = 3;
+//            lv_z = 1;
+            if (z < 0) {
+                lv_z = 1;
+            } else if (z < 5) {
+                lv_z = 2;
+            } else lv_z = 3;
         }
 
         //湿度をランク分け
@@ -542,24 +542,51 @@ public class DeviceDetailActivity extends AppCompatActivity {
             float l = Float.valueOf(luxMeter);
             if (l < 100) {
                 lv_l = 1;
-            } else if (l < 400) {
+            } else if (l < 200) {
                 lv_l = 2;
             } else lv_l = 3;
         }
+        Integer total = 0;
+//        if ((lv_x == 1) && (lv_y == 3) && (lv_z == 2) && (lv_h == 2) && (lv_l == 3)) {
+//            scale = "A#";
+//
+//        } else if ((lv_x == 2) && (lv_y == 2) && (lv_z == 1) && (lv_h == 3) && (lv_l == 2)) {
+//            scale = "c#";
+//
+//        } else if ((lv_x == 3) && (lv_y == 1) && (lv_z == 3) && (lv_h == 1) && (lv_l == 3)) {
+//            scale = "b#";
+//
+//        } else if ((lv_x == 1) && (lv_y == 1) && (lv_z == 1) && (lv_h == 1) && (c == 1)) {
+//            scale = "b";
+//
+//        } else scale = "c";
 
-        if ((lv_x == 1) && (lv_y == 3) && (lv_z == 2) && (lv_h == 2) && (lv_l == 3)) {
-            scale = "A#";
+        total = (lv_x + lv_y + lv_z + lv_x) % 7;
+        switch (total){
+            case 1:
+                scale = "c";
+                break;
 
-        } else if ((lv_x == 2) && (lv_y == 2) && (lv_z == 1) && (lv_h == 3) && (lv_l == 2)) {
-            scale = "c#";
+            case 2:
+                scale = "A";
+                break;
+            case 3:
+                scale = "B";
+                break;
+            case 4:
+                scale = "C";
+                break;
+            case 5:
+                scale = "D";
+                break;
+            case 6:
+                scale = "E";
+                break;
+            case 7:
+                scale = "F";
+                break;
 
-        } else if ((lv_x == 3) && (lv_y == 1) && (lv_z == 3) && (lv_h == 1) && (lv_l == 3)) {
-            scale = "b#";
-
-        } else if ((lv_x == 1) && (lv_y == 1) && (lv_z == 1) && (lv_h == 1) && (lv_l == 1)) {
-            scale = "b";
-
-        } else scale = "c";
+        }
         ((TextView) mActivity.findViewById(R.id.scalevalue)).setText(scale);
     }
 

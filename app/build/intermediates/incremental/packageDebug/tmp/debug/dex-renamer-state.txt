@@ -1,4 +1,4 @@
-#Sat Feb 02 11:32:27 JST 2019
+#Sat Feb 02 11:44:26 JST 2019
 base.0=C\:\\Users\\lika0\\Desktop\\danang_iot\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.1=classes.dex
 renamed.1=classes2.dex
