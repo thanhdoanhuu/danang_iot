@@ -493,11 +493,13 @@ public class DeviceDetailActivity extends AppCompatActivity {
 
             float x = Float.valueOf(acceleration_x);
 //            lv_x = 1;
-            if (x < -2) {
-                lv_x = 1;
-            } else if (x < 0) {
-                lv_x = 2;
-            } else lv_x = 3;
+//            if (x < -2) {
+//                lv_x = 1;
+//            } else if (x < 0) {
+//                lv_x = 2;
+//            } else lv_x = 3;
+
+            lv_x = (int)(x/10);
         }
 
         //加速度 yをランク分け
@@ -505,11 +507,13 @@ public class DeviceDetailActivity extends AppCompatActivity {
 
             float y = Float.valueOf(acceleration_y);
 //            lv_y = 1;
-            if (y < 0) {
-                lv_y = 1;
-            } else if (y < 5) {
-                lv_y = 2;
-            } else lv_y = 3;
+//            if (y < 0) {
+//                lv_y = 1;
+//            } else if (y < 5) {
+//                lv_y = 2;
+//            } else lv_y = 3;
+
+            lv_y = (int)(y/10);
         }
 
         //加速度 Zをランク分け
@@ -517,11 +521,13 @@ public class DeviceDetailActivity extends AppCompatActivity {
 
             float z = Float.valueOf(acceleration_z);
 //            lv_z = 1;
-            if (z < 0) {
-                lv_z = 1;
-            } else if (z < 5) {
-                lv_z = 2;
-            } else lv_z = 3;
+//            if (z < 0) {
+//                lv_z = 1;
+//            } else if (z < 5) {
+//                lv_z = 2;
+//            } else lv_z = 3;
+
+            lv_z = (int)(z/10);
         }
 
         //湿度をランク分け
@@ -540,11 +546,13 @@ public class DeviceDetailActivity extends AppCompatActivity {
         if (luxMeter != "") {
 
             float l = Float.valueOf(luxMeter);
-            if (l < 100) {
-                lv_l = 1;
-            } else if (l < 200) {
-                lv_l = 2;
-            } else lv_l = 3;
+//            if (l < 100) {
+//                lv_l = 1;
+//            } else if (l < 200) {
+//                lv_l = 2;
+//            } else lv_l = 3;
+
+            lv_l = (int)(l/100);
         }
         Integer total = 0;
 //        if ((lv_x == 1) && (lv_y == 3) && (lv_z == 2) && (lv_h == 2) && (lv_l == 3)) {
@@ -561,10 +569,10 @@ public class DeviceDetailActivity extends AppCompatActivity {
 //
 //        } else scale = "c";
 
-        total = (lv_x + lv_y + lv_z + lv_x) % 7;
+        total = (lv_x + lv_y + lv_z + lv_l) % 7;
         switch (total){
             case 1:
-                scale = "c";
+                scale = "G";
                 break;
 
             case 2:

@@ -46,8 +46,8 @@
       <file leaf-file-name="DeviceDetailActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/pasonatech/danang/DeviceDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="611" column="43" lean-forward="true" selection-start-line="606" selection-start-column="42" selection-end-line="611" selection-end-column="43" />
+            <state relative-caret-position="293">
+              <caret line="502" column="9" lean-forward="true" selection-start-line="502" selection-start-column="9" selection-end-line="502" selection-end-column="9" />
               <folding>
                 <element signature="method#onCreate#0;class#DeviceDetailActivity#0" expanded="false" />
                 <element signature="method#initialProgressBar#0;class#DeviceDetailActivity#0" expanded="false" />
@@ -61,8 +61,8 @@
                 <element signature="method#handleMessage#0;class#UIHandler#0;class#DeviceDetailActivity#0" expanded="false" />
                 <element signature="method#showToast#0;class#DeviceDetailActivity#0" expanded="false" />
                 <element signature="e#22273#22293#0" expanded="false" />
-                <element signature="e#25773#25947#0" expanded="true" />
-                <element signature="e#25946#25947#0" expanded="true" />
+                <element signature="e#25946#26120#0" expanded="true" />
+                <element signature="e#26119#26120#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/pasonatech/danang/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2924">
-              <caret line="111" column="2" lean-forward="true" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
+              <caret line="111" column="2" lean-forward="false" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,6 +86,7 @@
     <findStrings>
       <find>MidiControl</find>
       <find>updateScreen</find>
+      <find>scale</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2648,7 +2649,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1549075577080" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1549076380122" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android 端末テスト">
@@ -2696,7 +2697,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1549075577080" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1549076380122" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2879,7 +2880,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1549075577081" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1549076380124" />
       </method>
     </configuration>
     <list size="1">
@@ -2931,6 +2932,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
@@ -2947,7 +2949,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25653595" sideWeight="0.5098336" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26399395" sideWeight="0.8652968" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26399395" sideWeight="0.8652968" order="1" side_tool="false" content_ui="combo" />
       <window_info id="キャプチャー分析" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="デザイナー" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -3042,8 +3044,8 @@
             <element signature="method#handleMessage#0;class#UIHandler#0;class#DeviceDetailActivity#0" expanded="false" />
             <element signature="method#showToast#0;class#DeviceDetailActivity#0" expanded="false" />
             <element signature="e#22273#22293#0" expanded="false" />
-            <element signature="e#25773#25947#0" expanded="true" />
-            <element signature="e#25946#25947#0" expanded="true" />
+            <element signature="e#25946#26120#0" expanded="true" />
+            <element signature="e#26119#26120#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3065,8 +3067,8 @@
             <element signature="method#handleMessage#0;class#UIHandler#0;class#DeviceDetailActivity#0" expanded="false" />
             <element signature="method#showToast#0;class#DeviceDetailActivity#0" expanded="false" />
             <element signature="e#22273#22293#0" expanded="false" />
-            <element signature="e#25773#25947#0" expanded="true" />
-            <element signature="e#25946#25947#0" expanded="true" />
+            <element signature="e#25946#26120#0" expanded="true" />
+            <element signature="e#26119#26120#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3312,7 +3314,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/pasonatech/danang/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2924">
-          <caret line="111" column="2" lean-forward="true" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
+          <caret line="111" column="2" lean-forward="false" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -3321,8 +3323,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/pasonatech/danang/DeviceDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="611" column="43" lean-forward="true" selection-start-line="606" selection-start-column="42" selection-end-line="611" selection-end-column="43" />
+        <state relative-caret-position="293">
+          <caret line="502" column="9" lean-forward="true" selection-start-line="502" selection-start-column="9" selection-end-line="502" selection-end-column="9" />
           <folding>
             <element signature="method#onCreate#0;class#DeviceDetailActivity#0" expanded="false" />
             <element signature="method#initialProgressBar#0;class#DeviceDetailActivity#0" expanded="false" />
@@ -3336,8 +3338,8 @@
             <element signature="method#handleMessage#0;class#UIHandler#0;class#DeviceDetailActivity#0" expanded="false" />
             <element signature="method#showToast#0;class#DeviceDetailActivity#0" expanded="false" />
             <element signature="e#22273#22293#0" expanded="false" />
-            <element signature="e#25773#25947#0" expanded="true" />
-            <element signature="e#25946#25947#0" expanded="true" />
+            <element signature="e#25946#26120#0" expanded="true" />
+            <element signature="e#26119#26120#0" expanded="true" />
           </folding>
         </state>
       </provider>
